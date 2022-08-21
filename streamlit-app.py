@@ -16,7 +16,7 @@ def dot_score(a, b):
     return np.asarray(a).astype(np.float32).dot(np.asarray(b).astype(np.float32).T)
 
 with st.sidebar:
-    score_threshold = st.number_input('Enter a value between 1 and -1 as score threshold', value=0.4)
+    score_threshold = st.number_input('Enter a value between 1 and -1 as score threshold', value=0.75)
     hide_similar = st.selectbox('Hide similar items?', ('Yes','No'), index=1)
 
 input_url = st.text_input(label='Media Item URL or ID', value = '')
